@@ -8,4 +8,4 @@ Bem-vindo à primeira versão do meu portfólio! A intenção é criar um site o
 - **css** : Estilização e design do projeto
 - **js** : Adição de componentes dinâmicos
 
-> [!note] O projeto ainda está em desenvolvimento.
+> [!NOTE] O projeto ainda está em desenvolvimento.
