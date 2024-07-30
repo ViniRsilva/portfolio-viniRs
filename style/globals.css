@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap");
+
+:root {
+  --tw-bg-opacity: 1;
+  --main-color: rgb(18 18 18 / var(--tw-bg-opacity));
+  --font-color: #f1f1f1;
+  --link-color: #c9c6c6;
+  --shape-image-color: #181818;
+  --decoration-font-color: #4e2ec2ce;
+  --size-phase-home-presentation: -28vw;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: var(--main-color);
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: var(--font-color);
+}
+
+img {
+  object-fit: contain;
+}
+
+.flex {
+  display: flex;
+  gap: 1.5rem;
+}

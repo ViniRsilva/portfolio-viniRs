@@ -1,0 +1,495 @@
+@import url("./globals.css");
+header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: fixed;
+}
+
+header.scrolled {
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 -1px 4px rgba(255, 255, 255, 0.2);
+}
+/* NAVEGAÇÃO  */
+nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 28px 20px;
+}
+
+@media screen and (max-width: 1369px) {
+  nav,
+  section {
+    max-width: 90% !important;
+  }
+  #photo {
+    width: 40% !important;
+    max-width: 40% !important;
+  }
+  #presentationAnimed {
+    width: 80% !important;
+  }
+  #home_content {
+    justify-content: center !important;
+  }
+  #aboutMeSection {
+    display: none !important;
+  }
+
+  #presentationAnimed span {
+    font-size: 2.9vw !important;
+  }
+}
+
+@media screen and (max-width: 787px) {
+  #photo {
+    width: 60% !important;
+    max-width: 60% !important;
+  }
+}
+
+/* LOGO  */
+.nav_logo {
+  font-family: "Poetsen One", sans-serif !important;
+  font-weight: 400;
+  font-size: 1.4rem;
+  font-style: normal;
+}
+
+/* LISTA DA NAVEGAÇÃO */
+#nav_list {
+  list-style: none;
+  gap: 2em;
+  align-items: center;
+}
+#nav_list li {
+  font-size: 15px;
+}
+
+/* LINKS  */
+.link {
+  position: relative;
+  margin-bottom: 0.85rem;
+  color: var(--link-color);
+}
+.link::after {
+  content: "";
+  position: absolute;
+  height: 2.5px;
+  bottom: -0.2rem;
+  left: 50%;
+  width: 0%;
+  background-color: var(--decoration-font-color);
+  transition: 0.3s ease;
+}
+.link:hover::after {
+  left: 0;
+  width: 100%;
+}
+.link:hover {
+  color: var(--font-color);
+  transform: scale(1.2);
+}
+
+/* SECTIONS  */
+section {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 500px;
+  margin-top: 2.313rem;
+  margin-bottom: 2.25rem;
+  padding: 5.8rem 20px;
+}
+
+/* PRESENTATION  */
+#home {
+  justify-content: space-between;
+  width: 100%;
+  /* margin-top: 2.313rem;
+  margin-bottom: 2.25rem; */
+  height: calc(100vh - 2.313rem - 2.25rem);
+}
+
+#home_content {
+  width: 100%;
+  justify-content: space-between;
+  /* padding: 5.8rem 20px; */
+  flex-wrap: wrap;
+}
+#photo {
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  width: 30%;
+  max-width: 30%;
+}
+#shape {
+  /* height: 26rem; */
+  background: var(--shape-image-color);
+  /* width: 26rem; */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 80%; */
+}
+
+img#home_img {
+  width: 100%;
+  margin-right: 2rem;
+}
+
+/* APRESETATION ANIMED  */
+
+#presentationAnimed {
+  max-width: 50%;
+  color: var(--font-color);
+  flex-direction: column;
+  justify-content: center;
+  gap: 0 !important;
+}
+
+#presentationAnimed span {
+  position: relative;
+  font-size: 2vw;
+  color: transparent;
+  animation: homeBgFrame 13s infinite, generate-words 13s infinite;
+  -webkit-text-stroke: 0.8px var(--decoration-font-color);
+  background-image: linear-gradient(var(--decoration-font-color), var(--decoration-font-color));
+  background-repeat: no-repeat;
+  background-clip: text;
+  background-position: var(--size-phase-home-presentation) 0;
+  transition: opacity 0.8s ease-in-out;
+}
+#presentationAnimed span::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  border-left: 3px solid var(--decoration-font-color);
+  right: -10px;
+  animation: cursor 1s steps(2) infinite, show-word 13s infinite;
+  width: calc(100%);
+  /* background: var(--main-color); */
+}
+
+@keyframes homeBgFrame {
+  0%,
+  10%,
+  100% {
+    background-position: var(--size-phase-home-presentation) 0;
+  }
+
+  50%,
+  85% {
+    background-position: 0 0;
+  }
+}
+
+@keyframes show-word {
+  0%,
+  10%,
+  100% {
+    width: calc(100% + 10px);
+  }
+
+  50%,
+  85% {
+    width: 0;
+  }
+}
+
+@keyframes cursor {
+  0% {
+    border-left: 3px solid var(--main-color);
+  }
+}
+
+@keyframes generate-words {
+  0%,
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Apresenation*/
+
+p#title {
+  font-size: xx-large;
+  font-weight: 700;
+}
+
+p#description {
+  width: 100%;
+  margin-top: 16px;
+}
+
+/* COMUNICATION  */
+
+div#comunications {
+  position: fixed;
+  bottom: 1rem;
+  /* left: -4.5rem; */
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.item-comunication {
+  flex-direction: row-reverse;
+  gap: 8px;
+  background-color: blueviolet;
+  padding: 8px;
+  border-radius: 0px 10px 10px 0;
+  max-width: 2.5rem;
+  transition: all 0.15s ease;
+}
+
+.item-comunication img {
+  object-fit: contain;
+  width: 1.563rem;
+}
+
+.item-comunication:is(:hover, :focus) {
+  flex-direction: row;
+  max-width: 7rem;
+}
+
+.item-comunication a:is(:hover, :focus) {
+  text-decoration: underline;
+}
+
+/* BUTTON CONTACT ME  */
+button#contactMe {
+  margin-top: 46px;
+}
+
+/* PRIMARY BUTTON  */
+button.primary-button {
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  padding: 13px;
+  gap: 8px;
+  background: transparent;
+  border: 2px solid var(--decoration-font-color);
+  color: var(--decoration-font-color);
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  outline: none;
+}
+button.primary-button img {
+  width: 1.563rem;
+  transition: all 0.15s ease-in-out;
+}
+
+button.primary-button:is(:hover) img {
+  transition: all 0.15s ease-in;
+
+  animation: animeSvgButton 1s infinite alternate;
+  filter: brightness(0) invert();
+}
+
+@keyframes animeSvgButton {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-3px);
+  }
+}
+
+button.primary-button:is(:hover) {
+  transition: all 0.15s ease-in;
+  box-shadow: 0 0 30px 0 rgba(122, 0, 236, 0.5);
+  background-color: var(--decoration-font-color);
+  color: var(--font-color);
+}
+
+button.primary-button::before {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: white;
+  box-shadow: 0 0 15px 3px white;
+  transform: skewX(-20deg);
+}
+
+button.primary-button:is(:hover)::before {
+  animation: shine 1.2s 0.5s linear;
+}
+
+@keyframes shine {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+
+/* SOBRE MIM  */
+
+@keyframes profile__animate {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30%;
+  }
+
+  to {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+
+section#aboutMeSection {
+  flex-direction: column;
+  color: var(--font-color);
+  gap: 12rem;
+}
+
+#apresentation {
+  align-items: center;
+  justify-content: space-between;
+}
+div#picture img {
+  width: 24rem;
+  border-radius: 50%;
+  height: 24rem;
+  animation: profile__animate 8s ease-in-out infinite 1s;
+}
+
+div#aboutMe {
+  max-width: 60%;
+  flex-direction: column;
+  gap: 1.2rem !important;
+}
+
+div#aboutMe span {
+  color: var(--decoration-font-color);
+}
+
+div#aboutMeTitle h1 {
+  font-size: xxx-large;
+}
+div#aboutMeTitle {
+  /* justify-content: flex-end; */
+  flex-direction: column;
+  gap: 0rem !important;
+}
+
+/* technologys  */
+div#technologys img {
+  width: 4rem;
+}
+div#technologys {
+  width: 50%;
+  justify-content: center;
+  margin: auto;
+  border: 1px solid #32343e;
+  padding: 8px;
+  gap: 2rem;
+}
+
+/* MENU MOBILE  */
+#menu-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 680px) {
+  #presentationAnimed span {
+    font-size: 4.9vw !important;
+  }
+
+  #photo {
+    width: 80% !important;
+    max-width: 80% !important;
+  }
+  #presentationAnimed {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  nav,
+  section {
+    max-width: 98% !important;
+  }
+  #menu-mobile {
+    display: flex;
+    padding: 0.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 30000;
+  }
+
+  #hamburger-button {
+    width: 30px;
+    border-top: 3px solid #fff;
+    position: relative;
+    color: #fff;
+    transition: border-top 0.4s ease 0.5s;
+  }
+
+  #hamburger-button::after,
+  #hamburger-button::before {
+    content: "";
+    width: 30px;
+    height: 3px;
+    display: block;
+    top: 10px;
+    background-color: currentColor;
+    margin-top: 6px;
+    transition: transform 0.5s ease;
+  }
+
+  #nav-menu.active #hamburger-button {
+    border-top: none;
+  }
+
+  #nav-menu.active #hamburger-button::after {
+    transform: rotate(135deg);
+    position: absolute;
+    top: 0;
+  }
+  #nav-menu.active #hamburger-button::before {
+    transform: rotate(-135deg);
+  }
+
+  #nav_list {
+    flex-direction: column;
+    position: fixed;
+    right: -40%;
+    top: 0;
+    height: 100vh;
+    width: 40%;
+    background: rgb(30 29 29);
+    justify-content: center;
+    transition: right 0.5s ease-out;
+  }
+  #nav-menu.active #nav_list {
+    right: 0%;
+    opacity: 1;
+    z-index: 100;
+  }
+}
