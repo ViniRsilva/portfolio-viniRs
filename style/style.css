@@ -4,6 +4,7 @@ header {
   left: 0;
   width: 100%;
   position: fixed;
+  max-height: 5.313rem;
 }
 
 header.scrolled {
@@ -22,9 +23,9 @@ nav {
 @media screen and (max-width: 1369px) {
   nav,
   section {
-    max-width: 90% !important;
+    /* max-width: 90% !important; */
   }
-  #photo {
+  /* #photo {
     width: 40% !important;
     max-width: 40% !important;
   }
@@ -40,14 +41,14 @@ nav {
 
   #presentationAnimed span {
     font-size: 2.9vw !important;
-  }
+  } */
 }
 
 @media screen and (max-width: 787px) {
-  #photo {
+  /* #photo {
     width: 60% !important;
     max-width: 60% !important;
-  }
+  } */
 }
 
 /* LOGO  */
@@ -95,36 +96,37 @@ nav {
 
 /* SECTIONS  */
 section {
-  max-width: 80%;
+  /* max-width: 80%;
   margin-left: auto;
   margin-right: auto;
   min-height: 500px;
   margin-top: 2.313rem;
   margin-bottom: 2.25rem;
-  padding: 5.8rem 20px;
+  padding: 5.8rem 20px; */
 }
 
 /* PRESENTATION  */
 #home {
-  justify-content: space-between;
-  width: 100%;
-  /* margin-top: 2.313rem;
-  margin-bottom: 2.25rem; */
-  height: calc(100vh - 2.313rem - 2.25rem);
+  height: calc(100vh - (5.313rem * 2));
+  align-items: center;
+  margin: 5.313rem 0;
 }
 
 #home_content {
-  width: 100%;
   justify-content: space-between;
-  /* padding: 5.8rem 20px; */
   flex-wrap: wrap;
+  margin: 0 auto;
+  width: 80%;
+  max-width: 143.5rem;
 }
 #photo {
   align-items: center;
   justify-content: center;
   padding: 10px;
-  width: 30%;
-  max-width: 30%;
+  /* width: 30%; */
+  /* max-width: 33%; */
+  width: clamp(18.75rem, 33%, 29.375rem);
+  /* width: clamp(21.75rem, 33%, 29.375rem); */
 }
 #shape {
   /* height: 26rem; */
@@ -145,16 +147,17 @@ img#home_img {
 /* APRESETATION ANIMED  */
 
 #presentationAnimed {
-  max-width: 50%;
   color: var(--font-color);
   flex-direction: column;
   justify-content: center;
   gap: 0 !important;
+  width: clamp(350px, 50%, 47.5rem);
 }
 
 #presentationAnimed span {
   position: relative;
-  font-size: 2vw;
+  /* font-size: 2vw; */
+  font-size: clamp(24px, 2vw, 50px);
   color: transparent;
   animation: homeBgFrame 13s infinite, generate-words 13s infinite;
   -webkit-text-stroke: 0.8px var(--decoration-font-color);
@@ -163,6 +166,7 @@ img#home_img {
   background-clip: text;
   background-position: var(--size-phase-home-presentation) 0;
   transition: opacity 0.8s ease-in-out;
+  white-space: nowrap;
 }
 #presentationAnimed span::after {
   content: "";
@@ -284,6 +288,7 @@ button.primary-button {
   transition: all 0.3s ease-in-out;
   position: relative;
   outline: none;
+  z-index: -1;
 }
 button.primary-button img {
   width: 1.563rem;
@@ -416,8 +421,23 @@ div#technologys {
   display: none;
 }
 
+@media screen and (max-width: 850px) {
+  #home_content {
+    justify-content: center;
+  }
+}
+
 @media screen and (max-width: 680px) {
   #presentationAnimed span {
+    /* font-size: clamp(1.2rem, 1.2rem, 1.2rem); */
+    font-size: clamp(1.4rem, 1.4rem, 1.6rem);
+    z-index: -1;
+  }
+
+  #photo {
+    width: clamp(21.75rem, 33%, 29.375rem);
+  }
+  /* #presentationAnimed span {
     font-size: 4.9vw !important;
   }
 
@@ -425,6 +445,8 @@ div#technologys {
     width: 80% !important;
     max-width: 80% !important;
   }
+
+
   #presentationAnimed {
     width: 100% !important;
     max-width: 100% !important;
@@ -433,7 +455,7 @@ div#technologys {
   nav,
   section {
     max-width: 98% !important;
-  }
+  } */
   #menu-mobile {
     display: flex;
     padding: 0.5rem;
