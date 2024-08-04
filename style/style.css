@@ -375,18 +375,29 @@ section#aboutMeSection {
 #apresentation {
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap-reverse;
+  width: 80%;
+  margin: 0 auto;
 }
+
+div#picture {
+  padding: 8px;
+  width: clamp(300px, 40%, 24rem);
+}
+
 div#picture img {
-  width: 24rem;
+  width: 100%;
   border-radius: 50%;
-  height: 24rem;
+  /* height: 24rem; */
   animation: profile__animate 8s ease-in-out infinite 1s;
 }
 
 div#aboutMe {
-  max-width: 60%;
+  /* max-width: 60%; */
   flex-direction: column;
   gap: 1.2rem !important;
+  padding: 8px;
+  width: clamp(300px, 55%, 900px);
 }
 
 div#aboutMe span {
@@ -436,6 +447,10 @@ div#technologys {
   #photo {
     width: clamp(21.75rem, 33%, 29.375rem);
     padding: 8px;
+  }
+
+  #apresentation {
+    justify-content: center;
   }
 
   #menu-mobile {
@@ -495,5 +510,14 @@ div#technologys {
     right: 0%;
     opacity: 1;
     z-index: 100;
+  }
+}
+
+@media screen and (max-width: 1310px) {
+  #apresentation {
+    justify-content: center;
+  }
+  div#aboutMe {
+    width: clamp(300px, 100%, 900px);
   }
 }
