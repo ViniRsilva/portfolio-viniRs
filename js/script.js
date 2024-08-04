@@ -56,6 +56,21 @@ document.addEventListener("DOMContentLoaded", () => {
       .replace(/\s+/g, "")
       .toLowerCase();
   }
+
+  const buttonContactMe = document.getElementById("contactMe");
+  buttonContactMe.addEventListener("click", (elem) => {
+    const modalContactMe = document.getElementById("modal-contact-me");
+    modalContactMe.showModal();
+    elem.classList.toggle("active");
+  });
+
+  const closeModalContactMe = document.getElementById("close-modal-contact-me");
+  closeModalContactMe.addEventListener("click", (elem) => {
+    const modalContactMe = document.getElementById("modal-contact-me");
+    modalContactMe.close();
+    elem.classList.toggle("active");
+  });
+  // modal-contact-me
 });
 
 document.addEventListener("scroll", () => {

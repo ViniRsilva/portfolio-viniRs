@@ -640,3 +640,67 @@ div#container-projects h1 {
   border-radius: 16px;
   color: #f1f1f1;
 }
+
+/* MODAL CONTACT ME  */
+
+dialog#modal-contact-me {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: clamp(286px, 40%, 800px);
+  /* height: clamp(321px, 40%, 600px); */
+  background: rgba(37, 37, 37, 0.8);
+  border: none;
+  padding: 8px;
+  border-radius: 16px;
+  backdrop-filter: blur(14px);
+  color: #f1f1f1;
+}
+div#dialog-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  border-bottom: 1px solid #333;
+}
+div#dialog-header button {
+  width: 35px;
+  background: transparent;
+  border: none;
+  font-size: 29pt;
+  line-height: 18px;
+  /* border-bottom: 1px solid #333; */
+  color: #f1f1f1;
+  padding: 8px;
+  cursor: pointer;
+  text-align: center;
+}
+div#dialog-container {
+  padding: 16px;
+  height: max-content;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+}
+div#dialog-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 80%;
+}
+label.input-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.input-form {
+  padding: 14px;
+  border-radius: 16px;
+  outline: none;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  background: transparent;
+  color: rgba(255, 255, 255, 0.3);
+}
+textarea.input-form {
+  height: 98px;
+}
