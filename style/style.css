@@ -413,19 +413,6 @@ div#aboutMeTitle {
   gap: 0rem !important;
 }
 
-/* technologys  */
-div#technologys img {
-  width: 4rem;
-}
-div#technologys {
-  width: 50%;
-  justify-content: center;
-  margin: auto;
-  border: 1px solid #32343e;
-  padding: 8px;
-  gap: 2rem;
-}
-
 /* MENU MOBILE  */
 #menu-mobile {
   display: none;
@@ -519,5 +506,62 @@ div#technologys {
   }
   div#aboutMe {
     width: clamp(300px, 100%, 900px);
+  }
+}
+
+/* technologys  */
+
+.icons {
+  font-size: 4rem;
+  margin-right: 2.2rem;
+}
+div#technologys {
+  width: 80%;
+  margin: 0 auto;
+  padding: 8px;
+  margin-bottom: 10rem;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+}
+
+div#technologys::before {
+  content: " ";
+  position: absolute;
+  width: 20%;
+  height: 100%;
+  right: 0;
+  top: 0;
+  background: linear-gradient(to right, rgba(18, 18, 18, 0) 0%, rgba(18, 18, 18, 1) 100%);
+  z-index: -1;
+}
+
+div#technologys::after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20%;
+  height: 100%;
+  background: linear-gradient(to left, rgba(18, 18, 18, 0) 0%, rgba(18, 18, 18, 1) 100%);
+  z-index: -1;
+}
+
+.logo-slider {
+  gap: 2rem;
+  display: inline-block;
+  white-space: nowrap;
+  width: calc(6.4rem * 15);
+  animation: slide-icons 25s infinite linear;
+  z-index: -2;
+}
+
+@keyframes slide-icons {
+  to {
+    transform: translateX(0%);
+  }
+
+  from {
+    transform: translateX(calc(-6.47rem * 15));
   }
 }
