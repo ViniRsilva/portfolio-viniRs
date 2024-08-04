@@ -400,13 +400,22 @@ div#aboutMe {
   width: clamp(300px, 55%, 900px);
 }
 
-div#aboutMe span {
+/* div#aboutMe span {
+  color: var(--decoration-font-color);
+} */
+
+h1.section-title {
+  font-size: xxx-large;
+  color: #f1f1f1;
+}
+h1.section-title span {
   color: var(--decoration-font-color);
 }
 
-div#aboutMeTitle h1 {
+/* div#aboutMeTitle h1 {
   font-size: xxx-large;
-}
+} */
+
 div#aboutMeTitle {
   /* justify-content: flex-end; */
   flex-direction: column;
@@ -587,6 +596,47 @@ div#footer-content {
   gap: 0.6rem;
   text-align: center;
 }
+
 div#footer-content p {
   font-size: 10pt;
+}
+
+/* my Projects */
+
+div#container-projects {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+div#projects {
+  width: 100%;
+  display: grid;
+  gap: 3rem;
+  justify-content: center;
+  /* grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); */
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+.project img {
+  /* width: 300px; */
+  height: 280px;
+}
+
+div#container-projects h1 {
+  text-align: center;
+}
+
+.project {
+  /* width: 350px; */
+  display: flex;
+  flex-direction: column;
+  border: 1.8px solid rgba(255, 255, 255, 0.1);
+  padding: 16px;
+  gap: 1rem;
+  border-radius: 16px;
+  color: #f1f1f1;
 }
