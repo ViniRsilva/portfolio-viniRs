@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
   function calculateSizeBgPosition() {
     const sizeWidth = window.innerWidth;
     if (sizeWidth <= 680) {
-      console.log("TOQUEIIIIII");
       sizePhaseOne = "-69vw";
       sizePhaseTwo = "-35vw";
     } else if (sizeWidth <= 1369) {
@@ -72,4 +71,9 @@ document.addEventListener("scroll", () => {
 const nav = document.getElementById("nav-menu");
 nav.addEventListener("click", () => {
   nav.classList.toggle("active");
+  const primarysButton = document.querySelectorAll(".primary-button");
+
+  Array.from(primarysButton).forEach((e) => {
+    e.classList.toggle("active");
+  });
 });
