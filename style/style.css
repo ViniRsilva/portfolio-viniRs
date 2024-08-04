@@ -428,6 +428,9 @@ div#aboutMeTitle {
 }
 
 @media screen and (max-width: 767px) {
+  .circle {
+    visibility: hidden;
+  }
   #home_content {
     justify-content: center;
   }
@@ -703,4 +706,16 @@ label.input-form-group {
 }
 textarea.input-form {
   height: 98px;
+}
+
+/* CURSOR  */
+.circle {
+  position: fixed;
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  border: 1px solid white;
+  pointer-events: none;
+  top: -20px;
+  left: -20px;
 }
