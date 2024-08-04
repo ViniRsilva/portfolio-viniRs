@@ -152,7 +152,7 @@ img#home_img {
 #presentationAnimed span {
   position: relative;
   /* font-size: 2vw; */
-  /* font-size: clamp(24px, 2vw, 50px); */
+  font-size: clamp(24px, 2vw, 50px);
   color: transparent;
   animation: homeBgFrame 13s infinite, generate-words 13s infinite;
   -webkit-text-stroke: 0.8px var(--decoration-font-color);
@@ -218,7 +218,7 @@ img#home_img {
 /* Apresenation*/
 
 p#title {
-  font-size: xx-large;
+  font-size: clamp(39px, 3vw, 50px);
   font-weight: 700;
 }
 
@@ -282,7 +282,7 @@ button.primary-button {
   transition: all 0.3s ease-in-out;
   position: relative;
   outline: none;
-  z-index: -1;
+  /* z-index: -1; */
 }
 button.primary-button img {
   width: 1.563rem;
@@ -423,6 +423,9 @@ div#technologys {
     /* font-size: clamp(1.2rem, 1.2rem, 1.2rem); */
     /* font-size: clamp(1.4rem, 1.4rem, 1.6rem); */
     z-index: -1;
+  }
+  #presentationAnimed {
+    width: clamp(300px, 100%, 47.5rem);
   }
 
   #photo {
