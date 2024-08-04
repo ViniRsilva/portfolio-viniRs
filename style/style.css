@@ -107,9 +107,11 @@ section {
 
 /* PRESENTATION  */
 #home {
-  height: calc(100vh - (5.313rem * 2));
+  min-height: calc(100vh - (5.313rem));
   align-items: center;
-  margin: 5.313rem 0;
+  margin-top: 5.313rem;
+  overflow: hidden;
+  padding-bottom: 5.313rem;
 }
 
 #home_content {
@@ -120,28 +122,20 @@ section {
   max-width: 143.5rem;
 }
 #photo {
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
-  /* width: 30%; */
-  /* max-width: 33%; */
-  width: clamp(18.75rem, 33%, 29.375rem);
-  /* width: clamp(21.75rem, 33%, 29.375rem); */
+  width: clamp(16.75rem, 33%, 29.375rem);
+  padding: 8px;
 }
-#shape {
-  /* height: 26rem; */
+/* #shape {
   background: var(--shape-image-color);
-  /* width: 26rem; */
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* width: 80%; */
-}
+} */
 
 img#home_img {
   width: 100%;
-  margin-right: 2rem;
+  border-radius: 50%;
 }
 
 /* APRESETATION ANIMED  */
@@ -151,13 +145,14 @@ img#home_img {
   flex-direction: column;
   justify-content: center;
   gap: 0 !important;
-  width: clamp(350px, 50%, 47.5rem);
+  width: clamp(300px, 50%, 47.5rem);
+  padding: 8px;
 }
 
 #presentationAnimed span {
   position: relative;
   /* font-size: 2vw; */
-  font-size: clamp(24px, 2vw, 50px);
+  /* font-size: clamp(24px, 2vw, 50px); */
   color: transparent;
   animation: homeBgFrame 13s infinite, generate-words 13s infinite;
   -webkit-text-stroke: 0.8px var(--decoration-font-color);
@@ -166,9 +161,9 @@ img#home_img {
   background-clip: text;
   background-position: var(--size-phase-home-presentation) 0;
   transition: opacity 0.8s ease-in-out;
-  white-space: nowrap;
+  /* white-space: nowrap; */
 }
-#presentationAnimed span::after {
+/* #presentationAnimed span::after {
   content: "";
   position: absolute;
   height: 100%;
@@ -176,8 +171,7 @@ img#home_img {
   right: -10px;
   animation: cursor 1s steps(2) infinite, show-word 13s infinite;
   width: calc(100%);
-  /* background: var(--main-color); */
-}
+} */
 
 @keyframes homeBgFrame {
   0%,
@@ -421,41 +415,21 @@ div#technologys {
   display: none;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 767px) {
   #home_content {
     justify-content: center;
   }
-}
-
-@media screen and (max-width: 680px) {
   #presentationAnimed span {
     /* font-size: clamp(1.2rem, 1.2rem, 1.2rem); */
-    font-size: clamp(1.4rem, 1.4rem, 1.6rem);
+    /* font-size: clamp(1.4rem, 1.4rem, 1.6rem); */
     z-index: -1;
   }
 
   #photo {
     width: clamp(21.75rem, 33%, 29.375rem);
-  }
-  /* #presentationAnimed span {
-    font-size: 4.9vw !important;
+    padding: 8px;
   }
 
-  #photo {
-    width: 80% !important;
-    max-width: 80% !important;
-  }
-
-
-  #presentationAnimed {
-    width: 100% !important;
-    max-width: 100% !important;
-  }
-
-  nav,
-  section {
-    max-width: 98% !important;
-  } */
   #menu-mobile {
     display: flex;
     padding: 0.5rem;
