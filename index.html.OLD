@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- fav icon  -->
+    <link rel="icon" href="assets/logo.png" type="image/png" />
+    <!-- styles  -->
+    <link rel="stylesheet" href="style/style.css" />
+    <!-- scripts  -->
+    <script defer src="js/script.js" type="module"></script>
+    <!-- dev icons  -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" media="print" onload="this.media='all'" />
+
+    <title>Vinicius Silva - Portfolio</title>
+  </head>
+  <body>
+    <div class="circle"></div>
+
+    <header>
+      <nav id="nav-menu" class="flex">
+        <div id="slogan">
+          <a href="/" class="nav-logo">&lt;v-silva/&gt;</a>
+        </div>
+        <button id="menu-mobile">
+          <span id="hamburger-button"></span>
+        </button>
+        <ul id="nav-list" class="flex">
+          <li><a href="#about-me-section" class="link">Sobre Mim</a></li>
+          <li><a href="#my-projects" class="link">Projetos</a></li>
+          <li><a href="./assets/curriculo/Vinicius-cc-en.pdf" class="link">Baixar CV</a></li>
+          <li><a href="#" class="link">Me contrate</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="home" class="flex">
+      <div id="home-content" class="flex">
+        <div id="presentation-animed" class="flex">
+          <p id="main-title">Olá, eu sou</p>
+          <h1><span id="sub-title-main"></span></h1>
+
+          <p id="sumary-about-me">Programador e estudante de Engenharia de Software, focado em soluções inovadoras, buscando sempre aprender e contribuir em projetos desafiadores</p>
+
+          <button id="contact-me" class="flex primary-button">Entre em contato <img src="assets/send.svg" alt="icone que reprenta envio de mensagens" /></button>
+        </div>
+
+        <div id="photo">
+          <img id="home-img" src="assets/image.webP" alt="Foto de perfil, na qual representa um garoto em formato de cartoon programando com empolgação" />
+        </div>
+      </div>
+    </section>
+
+    <section id="about-me-section" class="flex">
+      <div id="apresentation" class="flex">
+        <div id="picture">
+          <img src="assets/Photo.webP" alt="Foto minha para uma apresentação mais eficaz aos usuários." />
+        </div>
+
+        <div id="about-me" class="flex">
+          <div id="aboutMeTitle" class="flex">
+            <h1 class="section-title">Sobre <span>mim</span></h1>
+            <h2>Desenvolvedor de Software</h2>
+          </div>
+
+          <p>Programador e estudante de Engenharia de Software, dedicado ao aprimoramento contínuo das minhas habilidades e conhecimentos. Comprometido com o desenvolvimento de soluções inovadoras e eficientes, estou sempre em busca de novas técnicas e tecnologias. Aberto a oportunidades desafiadoras e dinâmicas, procuro contribuir significativamente para o sucesso dos projetos. Minha paixão pela tecnologia e determinação em superar obstáculos fazem de mim um profissional motivado e preparado para agregar valor a qualquer equipe</p>
+
+          <button class="primary-button" id="baixar-cv">Baixar Currículo</button>
+        </div>
+      </div>
+
+      <div id="technologys" class="flex">
+        <div class="logo-slider">
+          <i class="devicon-javascript-plain icons"></i>
+          <i class="devicon-typescript-plain icons"></i>
+          <i class="devicon-nodejs-plain-wordmark icons"></i>
+          <i class="devicon-css3-plain icons"></i>
+          <i class="devicon-html5-plain icons"></i>
+          <i class="devicon-jquery-plain icons"></i>
+          <i class="devicon-mysql-original icons"></i>
+          <i class="devicon-postgresql-plain icons"></i>
+          <i class="devicon-prisma-original icons"></i>
+          <i class="devicon-fastify-plain icons"></i>
+          <i class="devicon-php-plain icons"></i>
+          <i class="devicon-java-plain icons"></i>
+          <i class="devicon-c-line-wordmark icons"></i>
+          <i class="devicon-cplusplus-line icons"></i>
+          <i class="devicon-git-plain icons"></i>
+
+          <!-- aqui  -->
+
+          <i class="devicon-javascript-plain icons"></i>
+          <i class="devicon-typescript-plain icons"></i>
+          <i class="devicon-nodejs-plain-wordmark icons"></i>
+          <i class="devicon-css3-plain icons"></i>
+          <i class="devicon-html5-plain icons"></i>
+          <i class="devicon-jquery-plain icons"></i>
+          <i class="devicon-mysql-original icons"></i>
+          <i class="devicon-postgresql-plain icons"></i>
+          <i class="devicon-prisma-original icons"></i>
+          <i class="devicon-fastify-plain icons"></i>
+          <i class="devicon-php-plain icons"></i>
+          <i class="devicon-java-plain icons"></i>
+          <i class="devicon-c-line-wordmark icons"></i>
+          <i class="devicon-cplusplus-line icons"></i>
+          <i class="devicon-git-plain icons"></i>
+        </div>
+      </div>
+    </section>
+
+    <section id="my-projects">
+      <div id="container-projects" class="flex">
+        <h1 class="section-title">Ultimos <span>Projetos</span></h1>
+        <div id="projects">
+          <div class="project">
+            <img src="./assets/projects/work1.webP" alt="projeto pessoal que desenvolve um site reponsivo que tem como objetivo mostrar a previsão do tempo de forma moderna " />
+            <h5>Aplicativo de Clima</h5>
+            <p>Aplicativo de previsão do tempo integrado à API, é possível saber o clima de qualquer cidade do mundo.</p>
+          </div>
+          <div class="project">
+            <img src="./assets/projects/work2.webP" alt="projeto pessoal que desenvolve meu portfólio responsivo com um desing tecnologico" />
+            <h5>Meu portfólio</h5>
+            <p>Criação do meu portfólio responsivo com css + javascript.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div id="footer-content">
+        <h2>&lt;v-silva/&gt;</h2>
+        <p>&copy; 2024 Vinicius Silva. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+    <!-- links redes  -->
+    <div id="comunications" class="flex">
+      <div class="item-comunication flex">
+        <img src="assets/github.svg" alt="logo do github" />
+        <a href="https://github.com/ViniRsilva">Github</a>
+      </div>
+      <div class="item-comunication flex">
+        <img src="assets/email.svg" alt="logo do email" />
+        <a href="mailto:vinicius14082004@gmail.com">Email</a>
+      </div>
+      <div class="item-comunication flex">
+        <img src="assets/linkedin.svg" alt="logo do linkedin" />
+        <a href="https://www.linkedin.com/in/vinirs/">Linkedin</a>
+      </div>
+    </div>
+
+    <!-- dialogs  -->
+    <dialog id="modal-contact-me">
+      <div id="dialog-header">
+        <h2>Entre em contato</h2>
+        <button type="button" id="close-modal-contact-me" class="close">×</button>
+      </div>
+      <div id="dialog-container">
+        <form action="">
+          <label class="input-form-group" for=""
+            >Nome
+            <input class="input-form" type="text" />
+          </label>
+          <label class="input-form-group" for=""
+            >Email
+            <input class="input-form" type="text" />
+          </label>
+          <label id="message-input-group" class="input-form-group" for=""
+            >Mensagem
+            <textarea class="input-form" name="" id=""></textarea>
+          </label>
+          <button class="primary-button">Enviar Mensagem</button>
+        </form>
+      </div>
+    </dialog>
+  </body>
+</html>

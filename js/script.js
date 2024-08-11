@@ -23,9 +23,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   window.addEventListener("resize", calculateSizeBgPosition);
 
-  const subTitle = document.getElementById("subTitleHome");
+  const subTitle = document.getElementById("sub-title-main");
 
-  var span = document.getElementById("subTitleHome");
+  var span = document.getElementById("sub-title-main");
   var words = ["Desenvolvedor de software", "Vinícius Silva"];
   var index = 0;
 
@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
       .toLowerCase();
   }
 
-  const buttonContactMe = document.getElementById("contactMe");
+  const buttonContactMe = document.getElementById("contact-me");
   buttonContactMe.addEventListener("click", (elem) => {
     const modalContactMe = document.getElementById("modal-contact-me");
     modalContactMe.showModal();

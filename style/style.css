@@ -29,17 +29,17 @@ nav {
     width: 40% !important;
     max-width: 40% !important;
   }
-  #presentationAnimed {
+  #presentation-animed {
     width: 80% !important;
   }
-  #home_content {
+  #home-content {
     justify-content: center !important;
   }
-  #aboutMeSection {
+  #about-me-section {
     display: none !important;
   }
 
-  #presentationAnimed span {
+  #presentation-animed span {
     font-size: 2.9vw !important;
   } */
 }
@@ -52,7 +52,7 @@ nav {
 }
 
 /* LOGO  */
-.nav_logo {
+.nav-logo {
   font-family: "Poetsen One", sans-serif !important;
   font-weight: 400;
   font-size: 1.4rem;
@@ -60,12 +60,12 @@ nav {
 }
 
 /* LISTA DA NAVEGAÇÃO */
-#nav_list {
+#nav-list {
   list-style: none;
   gap: 2em;
   align-items: center;
 }
-#nav_list li {
+#nav-list li {
   font-size: 15px;
 }
 
@@ -114,7 +114,7 @@ section {
   padding-bottom: 5.313rem;
 }
 
-#home_content {
+#home-content {
   justify-content: space-between;
   flex-wrap: wrap;
   margin: 0 auto;
@@ -133,14 +133,14 @@ section {
   align-items: center;
 } */
 
-img#home_img {
+img#home-img {
   width: 100%;
   border-radius: 50%;
 }
 
 /* APRESETATION ANIMED  */
 
-#presentationAnimed {
+#presentation-animed {
   color: var(--font-color);
   flex-direction: column;
   justify-content: center;
@@ -149,7 +149,7 @@ img#home_img {
   padding: 8px;
 }
 
-#presentationAnimed span {
+#presentation-animed span {
   position: relative;
   /* font-size: 2vw; */
   font-size: clamp(24px, 2vw, 50px);
@@ -163,7 +163,7 @@ img#home_img {
   transition: opacity 0.8s ease-in-out;
   /* white-space: nowrap; */
 }
-/* #presentationAnimed span::after {
+/* #presentation-animed span::after {
   content: "";
   position: absolute;
   height: 100%;
@@ -217,12 +217,12 @@ img#home_img {
 
 /* Apresenation*/
 
-p#title {
+p#main-title {
   font-size: clamp(39px, 3vw, 50px);
   font-weight: 700;
 }
 
-p#description {
+p#sumary-about-me {
   width: 100%;
   margin-top: 16px;
 }
@@ -263,7 +263,7 @@ div#comunications {
 }
 
 /* BUTTON CONTACT ME  */
-button#contactMe {
+button#contact-me {
   margin-top: 46px;
 }
 
@@ -366,7 +366,7 @@ button.primary-button:is(:hover)::before {
   }
 }
 
-section#aboutMeSection {
+section#about-me-section {
   flex-direction: column;
   color: var(--font-color);
   gap: 12rem;
@@ -393,7 +393,7 @@ div#picture img {
   animation: profile__animate 8s ease-in-out infinite 1s;
 }
 
-div#aboutMe {
+div#about-me {
   /* max-width: 60%; */
   flex-direction: column;
   gap: 1.2rem !important;
@@ -401,7 +401,7 @@ div#aboutMe {
   width: clamp(300px, 55%, 900px);
 }
 
-/* div#aboutMe span {
+/* div#about-me span {
   color: var(--decoration-font-color);
 } */
 
@@ -432,15 +432,15 @@ div#aboutMeTitle {
   .circle {
     visibility: hidden;
   }
-  #home_content {
+  #home-content {
     justify-content: center;
   }
-  #presentationAnimed span {
+  #presentation-animed span {
     /* font-size: clamp(1.2rem, 1.2rem, 1.2rem); */
     /* font-size: clamp(1.4rem, 1.4rem, 1.6rem); */
     z-index: -1;
   }
-  #presentationAnimed {
+  #presentation-animed {
     width: clamp(300px, 100%, 47.5rem);
   }
 
@@ -495,7 +495,7 @@ div#aboutMeTitle {
     transform: rotate(-135deg);
   }
 
-  #nav_list {
+  #nav-list {
     flex-direction: column;
     position: fixed;
     right: -40%;
@@ -506,7 +506,7 @@ div#aboutMeTitle {
     justify-content: center;
     transition: right 0.5s ease-out;
   }
-  #nav-menu.active #nav_list {
+  #nav-menu.active #nav-list {
     right: 0%;
     opacity: 1;
     z-index: 100;
@@ -517,7 +517,7 @@ div#aboutMeTitle {
   #apresentation {
     justify-content: center;
   }
-  div#aboutMe {
+  div#about-me {
     width: clamp(300px, 100%, 900px);
   }
 }
