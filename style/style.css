@@ -370,6 +370,7 @@ section#aboutMeSection {
   flex-direction: column;
   color: var(--font-color);
   gap: 12rem;
+  padding-top: 7.313rem;
 }
 
 #apresentation {
@@ -605,6 +606,10 @@ div#footer-content p {
 }
 
 /* my Projects */
+
+section#my-projects {
+  padding-top: 7.313rem;
+}
 
 div#container-projects {
   width: 80%;

@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/logo.png" type="image/png" />
     <link rel="stylesheet" href="style/style.css" />
     <script src="js/script.js" type="module"></script>
 
@@ -17,16 +18,15 @@
     <header>
       <nav id="nav-menu">
         <div id="logo">
-          <!-- <a href="#"><img src="assets/logo.png" alt="logo" /></a> -->
           <a href="/" class="nav_logo">&lt;v-silva/&gt;</a>
         </div>
         <button id="menu-mobile">
           <span id="hamburger-button"></span>
         </button>
         <ul id="nav_list" class="flex">
-          <li><a href="#" class="link">Sobre Mim</a></li>
-          <li><a href="#" class="link">Projetos</a></li>
-          <li><a href="#" class="link">Baixar CV</a></li>
+          <li><a href="#aboutMeSection" class="link">Sobre Mim</a></li>
+          <li><a href="#my-projects" class="link">Projetos</a></li>
+          <li><a href="./assets/curriculo/Vinicius-cc-en.pdf" class="link">Baixar CV</a></li>
           <li><a href="#" class="link">Me contrate</a></li>
         </ul>
       </nav>
@@ -44,9 +44,7 @@
         </div>
 
         <div id="photo">
-          <!-- <div id="shape"> -->
           <img id="home_img" src="assets/image.png" alt="Foto de perfil" />
-          <!-- </div> -->
         </div>
       </div>
     </section>
@@ -54,15 +52,15 @@
     <div id="comunications" class="flex">
       <div class="item-comunication flex">
         <img src="assets/github.svg" alt="logoGith" />
-        <a href="\">Github</a>
+        <a href="https://github.com/ViniRsilva">Github</a>
       </div>
       <div class="item-comunication flex">
         <img src="assets/email.svg" alt="logoGith" />
-        <a href="\">Email</a>
+        <a href="mailto:vinicius14082004@gmail.com">Email</a>
       </div>
       <div class="item-comunication flex">
         <img src="assets/linkedin.svg" alt="logoGith" />
-        <a href="\">Linkedin</a>
+        <a href="https://www.linkedin.com/in/vinirs/">Linkedin</a>
       </div>
     </div>
 
@@ -80,7 +78,7 @@
 
           <p>Programador e estudante de Engenharia de Software, dedicado ao aprimoramento contínuo das minhas habilidades e conhecimentos. Comprometido com o desenvolvimento de soluções inovadoras e eficientes, estou sempre em busca de novas técnicas e tecnologias. Aberto a oportunidades desafiadoras e dinâmicas, procuro contribuir significativamente para o sucesso dos projetos. Minha paixão pela tecnologia e determinação em superar obstáculos fazem de mim um profissional motivado e preparado para agregar valor a qualquer equipe</p>
 
-          <button class="primary-button">Baixar Currículo</button>
+          <button class="primary-button" id="baixar-cv">Baixar Currículo</button>
         </div>
       </div>
 

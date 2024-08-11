@@ -71,6 +71,12 @@ document.addEventListener("DOMContentLoaded", () => {
     elem.classList.toggle("active");
   });
   // modal-contact-me
+
+  const downloadCvButton = document.getElementById("baixar-cv");
+  downloadCvButton.addEventListener("click", () => {
+    console.log("downloadCvButton clicked");
+    window.location.href = "../assets/curriculo/Vinicius-cc-en.pdf";
+  });
 });
 
 document.addEventListener("scroll", () => {
@@ -84,7 +90,8 @@ document.addEventListener("scroll", () => {
 });
 
 const nav = document.getElementById("nav-menu");
-nav.addEventListener("click", () => {
+const hambungerButton = document.getElementById("menu-mobile");
+hambungerButton.addEventListener("click", () => {
   nav.classList.toggle("active");
   const primarysButton = document.querySelectorAll(".primary-button");
 
