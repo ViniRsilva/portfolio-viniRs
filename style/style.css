@@ -724,3 +724,7 @@ textarea.input-form {
   top: -20px;
   left: -20px;
 }
+.project-title {
+  font-size: 14px;
+  font-weight: 700;
+}
