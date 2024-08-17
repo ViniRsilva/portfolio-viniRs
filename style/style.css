@@ -458,44 +458,67 @@ div#aboutMeTitle {
 
   #menu-mobile {
     display: flex;
-    padding: 0.5rem;
+    /* padding: 0.5rem; */
     background: none;
     border: none;
     cursor: pointer;
     z-index: 30000;
+    /* position: relative; */
+    /* width: 30px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
   }
 
-  #hamburger-button {
-    width: 30px;
-    border-top: 3px solid #fff;
-    position: relative;
-    color: #fff;
-    transition: border-top 0.4s ease 0.5s;
-  }
-
-  #hamburger-button::after,
-  #hamburger-button::before {
+  #top-burger-buttom {
     content: "";
+    color: #fff;
     width: 30px;
-    height: 3px;
+    height: 2px;
     display: block;
-    top: 10px;
     background-color: currentColor;
-    margin-top: 6px;
+    /* margin-top: 6px; */
+    transition: transform 0.5s ease;
+  }
+  #midle-burger-buttom {
+    content: "";
+    color: #fff;
+    width: 10px;
+    height: 2px;
+    background-color: currentColor;
+
+    /* margin-top: 6px; */
+    transition: width 0.3s ease;
+  }
+  #bottom-burger-buttom {
+    content: "";
+    color: #fff;
+    background-color: currentColor;
+
+    width: 30px;
+    height: 2px;
+    /* margin-top: 6px; */
     transition: transform 0.5s ease;
   }
 
-  #nav-menu.active #hamburger-button {
-    border-top: none;
+  #nav-menu.active #midle-burger-buttom {
+    /* border-top: none; */
+    width: 0;
   }
 
-  #nav-menu.active #hamburger-button::after {
-    transform: rotate(135deg);
-    position: absolute;
-    top: 0;
+  #nav-menu.active #top-burger-buttom {
+    transform: rotate(45deg) translate(10px, 10px);
+  }
+  #nav-menu.active #bottom-burger-buttom {
+    transform: rotate(-45deg) translate(3px, -3px);
   }
   #nav-menu.active #hamburger-button::before {
-    transform: rotate(-135deg);
+    display: none;
+  }
+  #nav-menu.active #hamburger-button {
+    transform: rotate(45deg);
+    top: 8px;
   }
 
   #nav-list {
@@ -513,6 +536,9 @@ div#aboutMeTitle {
     right: 0%;
     opacity: 1;
     z-index: 100;
+  }
+  nav {
+    max-width: 100% !important;
   }
 }
 
