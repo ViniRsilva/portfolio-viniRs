@@ -1,0 +1,128 @@
+/* SOBRE MIM  */
+
+section#about-me-section {
+  flex-direction: column;
+  color: var(--font-color);
+  gap: 12rem;
+  padding-top: 7.313rem;
+}
+#apresentation {
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap-reverse;
+  width: 80%;
+  margin: 0 auto;
+}
+
+div#picture {
+  padding: 8px;
+  width: clamp(300px, 40%, 24rem);
+}
+
+div#picture img {
+  width: 100%;
+  border-radius: 50%;
+  animation: profile__animate 8s ease-in-out infinite 1s;
+}
+
+div#about-me {
+  flex-direction: column;
+  gap: 1.2rem !important;
+  padding: 8px;
+  width: clamp(300px, 55%, 900px);
+}
+
+h1.section-title {
+  font-size: xxx-large;
+  color: #f1f1f1;
+}
+h1.section-title span {
+  color: var(--decoration-font-color);
+}
+
+div#aboutMeTitle {
+  flex-direction: column;
+  gap: 0rem !important;
+}
+
+/* TECHNOLOGYS  */
+
+.icons {
+  font-size: 4rem;
+  margin-right: 2.2rem;
+}
+div#technologys {
+  width: 80%;
+  margin: 0 auto;
+  padding: 8px;
+  margin-bottom: 10rem;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+}
+
+div#technologys::before {
+  content: " ";
+  position: absolute;
+  width: 20%;
+  height: 100%;
+  right: 0;
+  top: 0;
+  background: linear-gradient(to right, rgba(18, 18, 18, 0) 0%, rgba(18, 18, 18, 1) 100%);
+  z-index: -1;
+}
+
+div#technologys::after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20%;
+  height: 100%;
+  background: linear-gradient(to left, rgba(18, 18, 18, 0) 0%, rgba(18, 18, 18, 1) 100%);
+  z-index: -1;
+}
+
+.logo-slider {
+  gap: 2rem;
+  display: inline-block;
+  white-space: nowrap;
+  width: calc(6.4rem * 15);
+  animation: slide-icons 25s infinite linear;
+  z-index: -2;
+}
+
+/* ANIMATIONS */
+@keyframes profile__animate {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30%;
+  }
+
+  to {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+
+@keyframes slide-icons {
+  to {
+    transform: translateX(0%);
+  }
+
+  from {
+    transform: translateX(calc(-6.47rem * 15));
+  }
+}
+
+/* MEDIAS SCREENS  */
+@media screen and (max-width: 1310px) {
+  #apresentation {
+    justify-content: center;
+  }
+  div#about-me {
+    width: clamp(300px, 100%, 900px);
+  }
+}

@@ -1,0 +1,44 @@
+/* my Projects */
+
+section#my-projects {
+  padding-top: 7.313rem;
+}
+
+div#container-projects {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+div#projects {
+  width: 100%;
+  display: grid;
+  gap: 3rem;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+.project img {
+  height: 280px;
+}
+
+div#container-projects h1 {
+  text-align: center;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  border: 1.8px solid rgba(255, 255, 255, 0.1);
+  padding: 16px;
+  gap: 1rem;
+  border-radius: 16px;
+  color: #f1f1f1;
+}
+.project-title {
+  font-size: 14px;
+  font-weight: 700;
+}

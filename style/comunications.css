@@ -1,0 +1,33 @@
+/* COMUNICATION  */
+
+div#comunications {
+  position: fixed;
+  bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.item-comunication {
+  flex-direction: row-reverse;
+  gap: 8px;
+  background-color: blueviolet;
+  padding: 8px;
+  border-radius: 0px 10px 10px 0;
+  max-width: 2.5rem;
+  transition: all 0.15s ease;
+}
+
+.item-comunication img {
+  object-fit: contain;
+  width: 1.563rem;
+}
+
+.item-comunication:is(:hover, :focus) {
+  flex-direction: row;
+  max-width: 7rem;
+}
+
+.item-comunication a:is(:hover, :focus) {
+  text-decoration: underline;
+}

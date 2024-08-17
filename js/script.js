@@ -90,7 +90,7 @@ document.addEventListener("scroll", () => {
 });
 
 const nav = document.getElementById("nav-menu");
-const hambungerButton = document.getElementById("menu-mobile");
+const hambungerButton = document.getElementById("buttom-menu-mobile");
 hambungerButton.addEventListener("click", () => {
   nav.classList.toggle("active");
   const primarysButton = document.querySelectorAll(".primary-button");

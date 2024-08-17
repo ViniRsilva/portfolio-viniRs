@@ -1,0 +1,79 @@
+/* MOBILE  */
+
+/* HAMBURGER BUTTOM  */
+#buttom-menu-mobile {
+  /* display: none; */
+  visibility: hidden;
+}
+
+#buttom-menu-mobile {
+  display: flex;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 30000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20px;
+}
+
+#top-burger-buttom {
+  content: "";
+  color: #fff;
+  width: 30px;
+  height: 2px;
+  display: block;
+  background-color: currentColor;
+  transition: transform 0.5s ease;
+}
+#midle-burger-buttom {
+  content: "";
+  color: #fff;
+  width: 10px;
+  height: 2px;
+  background-color: currentColor;
+  transition: width 0.3s ease;
+}
+
+#bottom-burger-buttom {
+  content: "";
+  color: #fff;
+  background-color: currentColor;
+
+  width: 30px;
+  height: 2px;
+  transition: transform 0.5s ease;
+}
+
+/* NAV LIST BUTTOM TOOGLE  */
+
+#nav-menu.active #midle-burger-buttom {
+  width: 0;
+}
+#nav-menu.active #top-burger-buttom {
+  transform: rotate(45deg) translate(10px, 10px);
+}
+#nav-menu.active #bottom-burger-buttom {
+  transform: rotate(-45deg) translate(3px, -3px);
+}
+#nav-menu.active #hamburger-button::before {
+  display: none;
+}
+#nav-menu.active #hamburger-button {
+  transform: rotate(45deg);
+  top: 8px;
+}
+
+/* MEDIAS SCREENS  */
+@media screen and (max-width: 767px) {
+  #buttom-menu-mobile {
+    visibility: visible;
+  }
+  #nav-list {
+    display: none;
+  }
+  nav {
+    max-width: 90% !important;
+  }
+}

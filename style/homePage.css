@@ -1,0 +1,108 @@
+/* HOME PAGE  */
+
+#home {
+  min-height: calc(100vh - (5.313rem));
+  align-items: center;
+  margin-top: 5.313rem;
+  overflow: hidden;
+  padding-bottom: 5.313rem;
+}
+
+#home-content {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 80%;
+  max-width: 143.5rem;
+}
+
+#photo {
+  width: clamp(16.75rem, 33%, 29.375rem);
+  padding: 8px;
+}
+
+img#home-img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+p#main-title {
+  font-size: clamp(39px, 3vw, 50px);
+  font-weight: 700;
+}
+
+p#sumary-about-me {
+  width: 100%;
+  margin-top: 16px;
+}
+
+/* APRESETATION ANIMED  */
+
+#presentation-animed {
+  color: var(--font-color);
+  flex-direction: column;
+  justify-content: center;
+  gap: 0 !important;
+  width: clamp(300px, 50%, 47.5rem);
+  padding: 8px;
+}
+
+#presentation-animed span {
+  position: relative;
+  font-size: clamp(24px, 2vw, 50px);
+  color: transparent;
+  animation: homeBgFrame 13s infinite, generate-words 13s infinite;
+  -webkit-text-stroke: 0.8px var(--decoration-font-color);
+  background-image: linear-gradient(var(--decoration-font-color), var(--decoration-font-color));
+  background-repeat: no-repeat;
+  background-clip: text;
+  background-position: var(--size-phase-home-presentation) 0;
+  transition: opacity 0.8s ease-in-out;
+}
+
+/* BUTTON CONTACT ME  */
+button#contact-me {
+  margin-top: 46px;
+}
+
+/* ANIMATIONS  */
+@keyframes homeBgFrame {
+  0%,
+  10%,
+  100% {
+    background-position: var(--size-phase-home-presentation) 0;
+  }
+
+  50%,
+  85% {
+    background-position: 0 0;
+  }
+}
+
+@keyframes generate-words {
+  0%,
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* MEDIA SCREENS  */
+@media screen and (max-width: 767px) {
+  #home-content {
+    justify-content: center;
+  }
+  #presentation-animed span {
+    z-index: -1;
+  }
+  #presentation-animed {
+    width: clamp(300px, 100%, 47.5rem);
+  }
+
+  #photo {
+    width: clamp(21.75rem, 33%, 29.375rem);
+    padding: 8px;
+  }
+}
