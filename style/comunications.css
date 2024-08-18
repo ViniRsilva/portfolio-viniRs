@@ -31,3 +31,8 @@ div#comunications {
 .item-comunication a:is(:hover, :focus) {
   text-decoration: underline;
 }
+@media screen and (max-width: 767px) {
+  div#comunications {
+    display: none;
+  }
+}

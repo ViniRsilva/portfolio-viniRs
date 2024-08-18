@@ -33,6 +33,14 @@ header.scrolled {
   box-shadow: 0 -1px 4px rgba(255, 255, 255, 0.2);
 }
 
+@media screen and (max-width: 767px) {
+  header {
+    top: unset !important;
+    bottom: 0 !important;
+    position: fixed !important;
+  }
+}
+
 /* NAVEGAÇÃO  */
 nav {
   display: flex;

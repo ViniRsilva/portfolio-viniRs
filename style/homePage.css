@@ -102,7 +102,11 @@ button#contact-me {
   }
 
   #photo {
-    width: clamp(21.75rem, 33%, 29.375rem);
+    width: clamp(18.75rem, 33%, 29.375rem);
     padding: 8px;
+  }
+
+  #home {
+    margin-top: 1.313rem !important;
   }
 }
